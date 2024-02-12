@@ -1,4 +1,4 @@
-export function getProduct(productId) {
+ export function getProduct(productId) {
   let matchingProduct;
 
   products.forEach((product) => {
