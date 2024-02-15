@@ -33,3 +33,13 @@ if (formatCurrency(2000.4) === '20.00' ){
 } else {
   console.log('failed');
 }
+
+console.log('test with a negative number');
+
+if (formatCurrency(-20) === '-20.00' ){
+  console.log('passed');
+} else {
+  console.log('failed');
+}
+
+
