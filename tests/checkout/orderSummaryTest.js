@@ -33,6 +33,10 @@ describe('test suite: renderOrderSummary', () =>{
 
   });
 
+  afterEach(()=>{
+    document.querySelector('.js-test-container').innerHTML ='';
+  });
+
   it ('displays the cart', () => {
 
     expect(
@@ -45,7 +49,7 @@ describe('test suite: renderOrderSummary', () =>{
     expect(
      document.querySelector(`.js-product-quantity-${productId2}`).innerText).toContain('Quantity: 1');  
 
-     document.querySelector('.js-test-container').innerHTML ='';
+     
 
   });
   
@@ -68,6 +72,6 @@ describe('test suite: renderOrderSummary', () =>{
     expect(cart.length).toEqual(1);
     expect(cart[0].productId).toEqual(productId2);
 
-    document.querySelector('.js-test-container').innerHTML ='';
   });
+
 });
